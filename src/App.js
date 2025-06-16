@@ -4,7 +4,7 @@ import 'leaflet/dist/leaflet.css';
 import { io } from 'socket.io-client';
 import './leafletFix';  // this fixes default icon missing issue
 
-const socket = io('http://localhost:5000');
+const socket = io('https://realtime-tracking-backend.onrender.com');
 
 const App = () => {
   const [map, setMap] = useState(null);
